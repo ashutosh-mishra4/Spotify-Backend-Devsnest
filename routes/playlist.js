@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Playlist = require("../models/Playlist");
 const { body, validationResult } = require("express-validator");
-const fetchuser = require("../middleware/fetchuser");
+const fetchuser = require("../middleware/fetchUser");
 
 // Route 1: Fetch all playlists of a user using: GET "/api/playlists/". Login required
 router.get("/", fetchuser, async (req, res) => {
