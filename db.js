@@ -1,3 +1,4 @@
+require("dotenv").config();
 const mongoose = require('mongoose')
 const mongoURI = `mongodb+srv://ashutoshmishra:${process.env.MONGO_PASSWORD}@cluster0.zj9bepb.mongodb.net/?retryWrites=true&w=majority`
 
